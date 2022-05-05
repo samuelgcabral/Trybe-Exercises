@@ -1,8 +1,0 @@
-Internet
-Unix
-Bash
-Javascript
-Java
-HTML
-CSS
-Python
