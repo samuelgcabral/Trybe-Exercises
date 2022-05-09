@@ -1,0 +1,29 @@
+div:hover {
+    border-color: yellow;
+    border-width: 3px;
+    border-style: solid;
+}
+.primaria {
+    color: red;
+    background-color: black;
+}
+.secundaria {
+    color: orange;
+    background-color: black;
+}
+.complementar {
+    color: green;
+    font-size: 1.5em;
+    background-color: red
+}
+.escura {
+    color: #363044;
+    background-color: burlywood;
+}
+.clara {
+    color: lightcoral;
+    background-color: black;
+}
+.primaria, .complementar, .clara {
+    font-style: italic;
+}
