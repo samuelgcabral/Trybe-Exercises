@@ -54,6 +54,28 @@
 // // // //             console.log("linhas retas vertical e horizontal");
 // // // //             break;
 // // // //     }
+            // function xadrez(peca) {
+                
+            //     if (peca === 'Cavalo') {
+            //         console.log("Movimento em L");
+            //     }
+            //     else if (peca === 'Bispo') {
+            //        console.log('Movimento nas diagonais');
+            //     }
+            //     else if (peca === 'Dama') {
+            //         console.log('Movimento em todas as direções');
+            //     }
+            //     else if (peca === 'Rei') {
+            //         console.log('Todas as direções, mas apenas uma casa');
+            //     }
+            //     else if (peca === 'Torre') {
+            //         console.log('Linhas retas vertical e horizontal.');
+            //     }
+            //     else {
+            //         console.log('peça desconhecida')
+            //     }
+            // }
+            //  xadrez('Bispo')
 // // // //  /////////////////////////////////////////////////////
 // // // // let notaPorcentagem = 61
 // // // //     if (notaPorcentagem >= 90 && notaPorcentagem <= 100) {
@@ -271,3 +293,183 @@
     // player.bestInTheWorld.length + " vezes.");
     // console.log("A jogadora possui " + player.medals.golden + " medalhas de ouro e " + player.medals.silver + 
     // " medalhas de prata.");
+/// Utilize for/in e imprima no console a mensagem 'Olá xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
+// let names = {
+//     person1: 'João',
+//     person2: 'Maria',
+//     person3: 'Jorge',
+//   };
+//   for (let index in names) {
+//       console.log("Olá " + names[index]);
+//   }
+/////////// Utilize for/in e imprima um console.log com as chaves e valores desse objeto.
+// let car = {
+//     model: 'A3 Sedan',
+//     manufacturer: 'Audi',
+//     year: 2020
+//   };
+//   for (let index in car) {
+//       console.log(index + ":", car[index]);
+//   }
+//////////////////////////  Imprima no console uma mensagem de boas-vindas para a personagem 
+// let info = {
+//     personagem: 'Margarida',
+//     origem: 'Pato Donald',
+//     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+//   };
+//   console.log("Bem-vinda, ", info.personagem);
+//  Insira no objeto uma nova propriedade com o nome de chave 'recorrente' e o valor 'Sim' e, em seguida, imprima o objeto no console.
+// info.recorrente = "Sim"
+// console.log(info.recorrente); 
+///////////////////////////// Faça um for/in que mostre todas as chaves do objeto. 
+// for (let key in info) {
+//     console.log(key);
+// }
+////////////////////////////// Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto.
+// for (let values in info) {
+//     console.log(info[values]);
+// }
+// info.personagem = "Margarida e Tio Patinhas"
+// info.origem = "Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178"
+// info.nota = "Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas"
+// info.recorrente = "Ambos recorrentes"
+// for (let values in info) {
+//     console.log(info[values]);
+// }
+/// Acesse as chaves nome, sobrenome e titulo, que está dentro da chave livrosFavoritos, e faça um console.log no seguinte formato: "O livro favorito de Julia Pessoa se chama 'O Pior Dia de Todos'".
+// let leitor = {
+//     nome: 'Julia',
+//     sobrenome: 'Pessoa',
+//     idade: 21,
+//     livrosFavoritos: [
+//       {
+//         titulo: 'O Pior Dia de Todos',
+//         autor: 'Daniela Kopsch',
+//         editora: 'Tordesilhas',
+//       },
+//     ],
+//   };
+//   console.log("O livro favorito de", leitor.nome, leitor.sobrenome, "se chama '" + leitor.livrosFavoritos[0].titulo + "'.");
+//////////////////// Adicione um novo livro favorito na chave livrosFavoritos, que é um array.
+// leitor.livrosFavoritos = {
+//     titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+//     autor: 'JK Rowling',
+//     editora: 'Rocco',
+//   }
+////////////// Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
+    // function verificaPalindromo(palavra) {
+
+    //     let palavraInversa = palavra.split('').reverse().join('');
+    //     return palavra === palavraInversa
+
+
+    // } console.log(verificaPalindromo('arara'));
+/////////////////// ///Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+// let array = [2, 4, 6, 7, 10, 0, -3]
+//     function indiceMaiorValor(arr) {
+
+//         const max = Math.max.apply(null, array);
+
+//         const indexOfArray = array.indexOf(max);
+//         return indexOfArray
+//     }
+// console.log(indiceMaiorValor(array));
+//////////////////// Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+    // function indiceMenorValor() {
+    //     let array = [2, 4, 6, 7, 10, 0, -3]
+    //     const min = Math.min.apply(null, array);
+
+    //     const indexOfArray = array.indexOf(min);
+    //     return indexOfArray
+    // }
+    // console.log(indiceMenorValor());
+///////////////// Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// const nomes = ['José', 'Lucas', 'Palhocinha', 'Fernanda', 'Cairo', 'Joana']
+//     function maiorPalavra(palavras) {
+//         let maiorPalavra = palavras[0];
+//         for (let indice in palavras) {
+//         if (maiorPalavra.length < palavras[indice].length) {
+//             maiorPalavra = palavras[indice];
+//         }
+//         }
+//         return maiorPalavra;
+//     }
+  
+//   console.log(maiorPalavra(nomes)); 
+
+//////////// function fatorial
+    // function fatorial(n) {
+    //     let fat = 1
+    //     for (let c = n; c > 1; c -= 1) {
+    //         fat *= c
+            
+    //     }
+    //     return fat
+    // }
+    // console.log(fatorial(5));
+ /////////////////// Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+//  let array = [2, 3, 2, 5, 8, 2, 3]
+//  function maisRepetido(numeros) {
+//     let contRepetido = 0;
+//     let contNumero = 0;
+//     let indexNumeroRepetido = 0;
+//     for (let index in numeros) {
+//       let verificaNumero = numeros[index];
+//       for (let index2 in numeros) {
+//         if (verificaNumero === numeros[index2]) {
+//           contNumero += 1;
+//         }
+//       }
+//       if (contNumero > contRepetido) {
+//         contRepetido = contNumero;
+//         indexNumeroRepetido = index;
+//       }
+//       contNumero = 0;
+//     }
+//     return numeros[indexNumeroRepetido];
+//   }
+//   console.log(maisRepetido(array));
+ /////////////////////////// programa que receba três constantes com os valores dos três ângulos internos de um triângulo.
+//  function triangleAnglesValidate(angleA, angleB, angleC) {
+//     let sumOfAngles = angleA + angleB + angleC;
+//     let allAnglesArePositives = angleA > 0 && angleB > 0 && angleC > 0;
+  
+//     if (allAnglesArePositives) {
+//       if (sumOfAngles === 180) {
+//         return true;
+//       } else {
+//         return false;
+//       }
+//     } else {
+//       return 'Erro: ângulo inválido';
+//     }
+//   }
+//   console.log(triangleAnglesValidate(60,60,50));
+///////// Crie uma função que receba um número natural N e retorne o somatório de todos os números de 1 até N.
+//     function somadorMaluco(numeroQualquer) {
+//     let totalDaSoma = 0
+//     for (let index = 1; index <= numeroQualquer; index++) {
+//         totalDaSoma += index
+        
+//     }
+//     return totalDaSoma
+// }
+// console.log(somadorMaluco(5));
+//////////// Crie uma função que receba uma string word e outra string ending. Verifique se a string ending é o final da string word. 
+// function verificaFimPalavra(palavra, fimPalavra) {
+//     palavra = palavra.split('');
+//     fimPalavra = fimPalavra.split('');
+//     let controle = true;
+//     for (let index = 0; index < fimPalavra.length; index += 1) {
+//       if (palavra[palavra.length - fimPalavra.length + index] != fimPalavra[index]) {
+//         controle = false;
+//       }
+//     }
+//     return controle;
+//   }
+//   console.log(verificaFimPalavra('banana', 'sana'));
+let a = "Serei a melhor pessoa dev";
+let b = "Esse é meu jeito dev de ser!";
+let num = 2;
+let strings = [a, b];
+console.log((typeof strings.length) == (typeof num));
