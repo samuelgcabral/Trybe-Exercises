@@ -1,0 +1,35 @@
+.form-floating {
+    width: 35%;
+}
+body {
+    background-color: rgb(27, 26, 26);
+    color: white;
+    max-width: 50%;
+    margin: 40px auto;
+}
+header, form {
+    background-color: rgb(66, 65, 65);
+    border-radius: 20px;
+    padding: 10px;
+}
+.labels {
+    color: black;
+}
+
+.btn {
+    margin: 4px 10px 18px 0px
+}
+.ofertas {
+    font-weight: bold;
+    font-size: 16px;
+}
+form {
+    margin-top: 20px;
+}
+#txtarea {
+    width: 70%;
+    margin: 10px auto;
+}
+.form-control {
+    border: 2px solid black;
+}

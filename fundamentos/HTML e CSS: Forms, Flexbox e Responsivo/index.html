@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="" method="GET">
+        <label for="email">E-mail:
+            <input type="email" id="email" placeholder="Digite seu email" required >
+            <br><br>
+        </label>
+        <label for="passkey">Senha:
+            <input type="password" id="passkey" placeholder="Digite sua senha" required>
+        </label>
+        <br><br>
+        <input type="checkbox" checked>Lembre-me <br><br>
+        <label for="state">Selecione o estado onde você habita:
+            <select name="" id="state">
+                <option value="sc">SANTA CATARINA</option>
+                <option value="sp" selected>SAO PAULO</option>
+                <option value="mg">MINAS GERAIS</option>
+                <option value="ba">BAHIA</option>
+                <option value="pe">PERNAMBUCO</option>
+                <option value="df">DISTRITO FEDERAL</option>
+                <option value="rj">RIO DE JANEIRO</option>
+            </select>
+        </label> <br><br>
+        <label for="">Selecione sua comida favorita:
+            <label for="pizza">
+                <input type="radio" id="pizza" name="comida" value="pizza" checked> PIZZA
+            </label>
+            <label for="lasagna"><input type="radio" id="lasagna" name="comida" value="lasanha"> LASANHA
+            </label>
+            <label for="bolacha"><input type="radio" id="bolacha" name="comida" value="BOLACHA"> BOLACHA
+            </label>
+            <label for="sushi">
+                <input type="radio" name="comida" id="sushi" value="SUSHIZINHO"> SUSHI</label> <br> <br>
+            <p>Quem é você?</p>
+                <textarea name="" id="" cols="40" rows="8"></textarea>
+
+        </label> <br>
+        <button type="submit">Enviar</button> <br><br>
+    </form>
+</body>
+
+</html>
